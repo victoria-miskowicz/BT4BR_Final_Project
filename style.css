@@ -1,0 +1,9 @@
+.content {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.content h2 {
+  margin-bottom: 1rem;
+}
