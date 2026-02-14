@@ -15,68 +15,323 @@
       <ul class="nav-links">
         <li><a href="home.html">Home</a></li>
         <li><a href="research.html">Research & Resources</a></li>
-        <li><a href="git.html">GitHub</a></li>
+        <li><a href="git.html">GitHub & Git</a></li>
         <li><a href="visualization.html">Visualization</a></li>
         <li><a href="podcasts.html">Podcasts</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Main -->
     <main class="content">
+
+  <!-- Beggining and Introduction to GitHub & Git-->
     <section>
       <h2>GitHub & Git</h2>
     </section>
 
+  
+  <!-- GitHub & Git Differences -->
     <section>
-      <h3>Differences</h3>
+      <h3>Differences between GitHub and Git</h3>
       <p>
-        <strong>GitHub</strong> - a cloud-based platform where you can store and share your work with others
+        <strong>GitHub</strong> - a cloud-based <a href="https://github.com/">platform</a> that hosts Git repositories that stores your code remotely, 
+        allows you to collaborate with others and share your projects publicly or privately.
       </p>
 
       <p>
-        <strong>Git</strong> - a version control system that increases the workflow and tracks changes in the work
+        <strong>Git</strong> - a version control system that tracks changes in files over time and increases the workflow by saving and comparing 
+        committed version control, undoing mistakes, and collaborating safely.
       </p>
     </section>
 
+  <!-- Reasons for using Git -->
+    <section>
+      <h3>Why Using Git is important?</h3>
+      <p>
+        Using Git in a structured way:
+        <ul>
+        <li>Protects your work from accidental loss</li>
+        <li>Creates a transparent research and development history</li>
+        <li>Supports reproducibility and collaboration</li>
+        </ul>
+        This workflow is widely used in both academic research and software development and now you can do it, too!
+      </p>
+    </section>
+
+
+  <!-- Setting up GitHub Guide -->
     <section class="content">
-      <h3>Set up</h3>
+      <h3>First Time Set Up</h3>
+
+      <p>
+        To start using Git and GitHub, first you need to configure your identity and authenticate your personal computer.
+        Here is the step-by-step guide how to set up the whole system on your own.
+      </p>
+
 
       <div class="code-box">
-        <!-- div class="code-title">
-          Basic File Navigation - Test
-        </div -->
+        <h4>1. Create Your GitHub Account</h4>
+        <p>
+          Go to <a href="https://github.com/">GitHub</a> website and following the instructions there set up your first ever account.
+        </p>
+        <div class="code-note">If you already have an account and would want to use that one throughtout the whole process, you can skip this step.</div>
+      </div>
 
+
+      <div class="code-box">
+        <h4>2. Configure Your Git Identity</h4>
+        <p>
+          Git uses your name and email to label commits so choose the name that 
+          you want others to identify you by while collaborating on projects.
+        </p>
         <pre><code>
       git config --global user.name "[Name]"
       git config --global user.email "[email@example.com]"
       git config --list
         </code></pre>
+        <div class="code-note">The last command verifies if your configuration was succesful.</div>
       </div>
 
-      <div class="code-box">
 
+      <div class="code-box">
+        <h4>3. Check for an Existing SSH Key</h4>
+        <p>
+          SSH keys allow secure communication between your computer 
+          and GitHub without entering your password each time.
+        </p>
         <pre><code>
       ls -al ~/.ssh
+        </code></pre>
+        <div class="code-note">If you see files like id_ed25519 and id_ed25519.pub, you already have an SSH key and can skip to step 5.</div>
+      </div>
+
+
+      <div class="code-box">
+        <h4>4. Generate a New SSH Key</h4>
+        <p>
+          If you don't have an SSH key, generate a new one using the command below.
+        </p>
+        <pre><code>
       ssh-keygen -t ed25519 -C "your-email@example.com"
-      cat ~/.ssh/id_ed25519.pub
-      ssh -T git@github.com
         </code></pre>
       </div>
 
 
+      <div class="code-box">
+        <h4>5. Copy the SSH Public Key</h4>
+        <p>
+          Dispaly the public key with the command below and copy the whole output.
+        </p>
+        <pre><code>
+      cat ~/.ssh/id_ed25519.pub
+        </code></pre>
+        <div class="code-note">If you have any trouble finding your key try this command instead: <br> pbcopy < ~/.ssh/id_ed25519.pub</div>
+      </div>
+
+
+      <div class="code-box">
+        <h4>6. Add the SSH Key to GitHub</h4>
+        <p>
+          To complete this step go to your GitHub Account Settings and navigate to <strong>SSH and GPG keys</strong> section. 
+          Once there, click <strong>New SSH key</strong> and paste your copied key. Save your changes to connect your computer to your account.
+        </p>
+      </div>
+
+
+      <div class="code-box">
+        <h4>7. Final Connection Test</h4>
+        <p>
+          If you have successfully set up your connection, you’ll see a message confirming authentication with the command below.
+        </p>
+        <pre><code>
+      ssh -T git@github.com
+        </code></pre>
+      </div>
 
     </section>
 
 
+  <!-- Git Commands-->
+  <section>
+    <h2>Git Commands</h2>
+  </section>
 
-    </main>
 
+  <!-- Common Git Workflow-->
+  <section>
+    <h3>Common Git Workflow</h3>
+    <p>
+      Now we will go through a common Git Workflow, strating with getting access to your online repository 
+      and ending with commiting and saving your new changes.
+    </p>
+
+
+    <div class="code-box">
+      <h4>1. Access your repository</h4>
+      <p>
+        Once you have created your working repository on your GitHub Account you can access it 
+        on your computer through the link you find on your project main page. 
+        <br>Go: [Your repository] -> <strong>Code</strong> (Green Button) -> <strong>SSH</strong> -> [Copy the link]
+      </p>
+      <div class="code-note">
+        1. If your connecting with your repository for the first time use command #1
+        <br>2. If you are accesing it once again any next time to update any changed files use command #2
+      </div>
+      <pre><code>
+      #1 git clone git@github.com:username/repository-name.git
+      #2 git pull
+      </code></pre>
+    </div>
+
+
+    <div class="code-box">
+      <h4>2. Move Into the Project Directory and Edit Your Files</h4>
+      <p>
+        Navigate into your project folder. Each file you have in your online GitHub repository should be found there as well.
+      </p>
+
+      <div class="code-note">
+        <strong>Remember:</strong> All Git commands must be run <strong>inside</strong> the repository directory.
+      </div>
+      <pre><code>
+      cd repository-name
+      </code></pre>
+    </div>
+
+
+    <div class="code-box">
+      <h4>3. Stage Changes</h4>
+      <p>
+        <strong>Staging</strong> is a phase when you tell Git which 
+        files you would like to keep track of and commit at the end of your work.
+      </p>
+
+      <div class="code-title">Staging Commands</div>
+      <div class="code-note">
+        #1 Add this one file to Staging
+        <br>#2 Add all changed files to Staging
+        <br>#3 Remove this one file from Staging
+      </div>
+      <pre><code>
+      #1 git add filename
+      #2 git add .
+      #3 git reset filename
+      </code></pre>
+
+      <div class="code-title">Check Status</div>
+      <div class="code-note">
+        To check which files were added into Staging phase use the command below.
+      </div>
+      <pre><code>
+      git status
+      </code></pre>
+    </div>
+
+
+    <div class="code-box">
+      <h4>4. Commit Changes</h4>
+      <p>
+        Commits are the snapshots of what you have changed while working on your project. 
+        It saves all files you added during Staging. 
+        While commiting your work you should always add a message that describes what and why you have changed something.
+      </p>
+      <pre><code>
+      git commit -m "My message"
+      </code></pre>
+      <div class="code-note">
+        Remeber: Detailed commits are always better than none!
+      </div>
+    </div>
+
+
+    <div class="code-box">
+      <h4>5. Push Changes to GitHub</h4>
+      <p>
+        To save all the changes you committed along side with your message, you need to upload them to GitHub using the command below. 
+        This updates the online version of your project.
+      </p>
+      <pre><code>
+      git push
+      </code></pre>
+    </div>
+    
+    <p>
+      Congratulations! You just successfully used Git and improved the quality of your whole project!
+    </p>
+  </section>
+
+
+  <!-- Additional Useful Commands -->
+  <section>
+    <h3>Additional Useful Commands</h3>
+
+  <!-- Branches -->
+  <div class="code-box">
+    <h4>Branches</h4>
+    <p>
+      Branches are seperate duplicates of your work that allow you to test out new features or do some experiments without affecting the main code. 
+      They guarantee safe space for development and testing, as well as parallel work before saving the changes and merging them back into the main branch.
+    </p>
+    <div class="code-title">Branches Commands</div>
+    <div class="code-note">
+    #1 display all branches
+    <br>#2 create a new branch
+    <br>#3 go to and work on the given branch
+    <br>#4 compare two branches
+    <br>#5 merge the chosen branch with the current one
+    <br>#6 save changes from the chosen branch
+    </div>
+    <pre><code>
+    #1 git branch
+    #2 git branch 'branch_name'
+    #3 git checkout 'branch_name'
+    #4 git diff 'branch_1'..'branch_2'
+    #5 git merge 'branch_1'
+    #6 git push origin 'branch'
+    </code></pre>
+  </div>
+
+  <!-- Other Commands -->
+  <div class="code-box">
+    <h4>Other Useful Commands</h4>
+    <p>
+      Here you can find the list of other common commands that you may use while working on your projects.
+    </p>
+    <div class="code-note">
+      #1 Create a new Git repository in the current directory when starting a new project
+      <br>#2 Move or rename a file while preserving its Git history
+      <br>#3 Delete the file and stage the removal for the next commit
+      <br>#4 Display the commit history, showing past changes and messages
+      <br>#5 Show differences between files that have been modified but not yet committed
+    </div>
+    <pre><code>
+    #1 git init
+    #2 git mv old_name new_name
+    #3 git rm filename
+    #4 git log
+    #5 git diff
+    </code></pre>
+  </div>
+
+  <!-- More resources -->
+  <div class="code-box">
+    <h4>More resources</h4>
+    <p>
+      If you want to learn more about Git check out this <a href="https://git-scm.com/book/en/v2">website</a> for even more useful commands!
+    </p>
+  </div>
+  </section>
+
+  </main>
+
+  <!-- Footer -->
   <footer class="site-footer">
-  <p>
-    Final Project for the course <em>"Basic Toolkit for Bioinformatics Research"</em><br>
-    Built by Victoria Miśkowicz • 2026
-  </p>
-</footer>
+    <p>
+      Final Project for the course <em>"Basic Toolkit for Bioinformatics Research"</em><br>
+      Built by Victoria Miśkowicz • 2026
+    </p>
+  </footer>
 
 </body>
 </html>
