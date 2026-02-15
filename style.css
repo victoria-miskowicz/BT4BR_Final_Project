@@ -1,4 +1,5 @@
 /* CSS */
+/* ------------------------------------ */
 
 body {
   background-color: #f1f3f4;
@@ -6,6 +7,7 @@ body {
 
 
 /* Navigation Bar */
+/* ------------------------------------ */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -44,6 +46,7 @@ body {
 
 
 /* Content */
+/* ------------------------------------ */
 .content {
   max-width: 900px;
   margin: 2rem auto;
@@ -70,7 +73,6 @@ body {
 }
 
 /* Section */
-
 .content section {
   background-color: #ffffff;
   padding: 1rem;
@@ -81,12 +83,19 @@ body {
 
 
 /* Code boxes */
+/* ------------------------------------ */
 .code-box {
   background-color: #f9f9f9;
   border-left: 6px solid #00adb5;
   padding: 0.5rem 1.5rem;
   margin: 2rem 0;
   border-radius: 6px;
+}
+
+.code-box p {
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
 }
 
 .code-title {
@@ -112,6 +121,7 @@ pre {
 
 
 /* Footer */
+/* ------------------------------------ */
 .site-footer {
   background-color: #1e1e1e;
   color: #cccccc;
@@ -126,12 +136,16 @@ pre {
   line-height: 1.5;
 }
 
+/* QUIZ */
+/* ------------------------------------ */
 
 /* Quiz image */
 .quiz-image {
-  max-width: 100%;
-  margin: 1.5rem 0;
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
   border-radius: 6px;
+  height: auto;
 }
 
 /* Reveal button */
@@ -150,7 +164,7 @@ pre {
   background-color: #019ca3;
 }
 
-/* Answer box */
+/* Quiz box */
 .quiz-answer {
   background-color: #f9f9f9;
   border-left: 6px solid #00adb5;
@@ -162,3 +176,41 @@ pre {
 .hidden {
   display: none;
 }
+
+
+/* Answer Box */
+/* ------------------------------------ */
+.issue {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.issue p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+/* Shared card styling */
+.problem,
+.solution {
+  flex: 0.5;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+/* Problem styling */
+.problem {
+  background-color: #fff5f5;
+  border-left: 4px solid #e53935;
+  border-right: 4px solid #e53935;
+}
+
+/* Solution styling */
+.solution {
+  background-color: #e6f7f5;
+  border-left: 4px solid #4ecdc4;
+  border-right: 4px solid #4ecdc4;
+}
+

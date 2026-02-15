@@ -25,33 +25,211 @@
   <!-- Main -->
   <main class="content">
   
+  <!-- Rules and Tips -->
     <section>
       <h2>Visualization Rules and Tips</h2>
     </section>
 
     <section>
-      <h3></h3>
+      <h3>Rules & Tips for Creating Better Graphs</h3>
+      <p>
+        Good graphs are not just all about aesthetics — they are first and foremost powerful tools of data representation that, if done well, can take your publication to a higher level.
+        Clear, well-designed figures help readers understand your data quickly, avoid misinterpretation, and build trust in your results. 
+        The following rules and tips highlight essential principles that improve clarity, accuracy, and readability in scientific data visualization.
+      </p>
+      
+  <!-- Rules -->
+      <div class="code-box">
+        <h4>1. Always label your axes (with units)</h4>
+        <p>Axis labels are essential for interpretation. Without units and clear labels, the reader cannot understand what is being measured or compared.</p>
+
+        <h4>2. Use readable fonts and appropriate font sizes</h4>
+        <p>Text in your graph should be legible without zooming in. Avoid overly decorative fonts and ensure that labels, ticks, and captions are easy to read.</p>
+
+        <h4>3. Choose color palettes carefully</h4>
+        <p>Use colors that are visually distinct, easy on the eyes, and accessible to color-blind readers. Avoid colors that clash or convey unintended emphasis.</p>
+
+        <h4>4. Choose the right type of plot for your data</h4>
+        <p>Different data types require different visual representations. Select the graph type that most truthfully and clearly communicates your message, rather than the one that looks most impressive.</p>
+
+        <h4>5. Include a clear and informative caption</h4>
+        <p>A good caption explains what the graph shows, how the data were generated, and any relevant statistical or methodological details. The reader should understand the figure without referring back to the main text.</p>
+
+        <h4>6. Provide a clear legend when needed</h4>
+        <p>If your graph uses colors, symbols, or multiple data series, include a legend directly on the graph when possible. If space is limited, ensure the legend is clearly explained in the caption.</p>
+
+        <h4>7. Titles are optional, clarity is not</h4>
+        <p>Graph titles can be useful but are not mandatory if the caption and labels provide sufficient context. Avoid redundant or overly long titles.</p>
+
+        <h4>8. Avoid overloading your graph</h4>
+        <p>More information does not always mean better communication. Remove unnecessary elements, reduce clutter, and focus on the key message you want the reader to take away.</p>
+
+      </div>
     </section>
 
+  <!-- QUIZ -->
+    <section>
+      <h2>QUIZ</h2>
+    </section>
 
-    <section class="content">
-      <h2>Quiz</h2>
-
+    <section>
+      <h3>Graph Critique Challenge</h3>
       <p>
-        Look at the graph below and judge how you can improve it.
+        Welcome to the Graph Critique Challenge, where it is now your turn to become a reviewer and evaluate how well presented figures were made. 
+        <br>Your task is to identify any mistakes made by the designers and then suggest possible improvements that could be applied to help transform those graphs into model examples worthy the best publications.
+        <br>At the end, you can compare your answers by clicking <strong>"Reveal Answer"</strong> to see how many rules and tips you remembered.
+        <br>Are you ready? Then set and… GO!
+      </p>
+    </section>
+    
+  <!-- Graph 1 -->
+    <section>
+      <p>
+        <h3>1. Graph One</h3>
+      </p>
+      <img src="Images/bad_graph_1.png" alt="Example graph" class="quiz-image">
+      
+      <p><strong>Graph 1 Caption:</strong> The pie chart showing number of publications produced according to the subject area</p>
+      <p style="text-align: right;">
+        (<a href="https://www.researchgate.net/publication/374755024_Education_big_data_and_learning_analytics_a_bibliometric_analysis">Graph Source</a>)<br>
       </p>
 
-      <img src="images/bad-graph.png" alt="Example graph" class="quiz-image">
-      <br><br>
       <button class="reveal-btn" onclick="toggleAnswer(this)">
-        Reveal answer
+        Reveal Answer
       </button>
 
-      <div id="quiz-answer" class="quiz-answer hidden">
-        <ul>
-          <li>x</li>
-          <li>y</li>
-        </ul>
+      <div class="quiz-answer hidden">
+        <div class="issue">
+
+          <div class="problem" style="text-align: center;">
+            <strong>Problem</strong>
+          </div>
+
+          <div class="solution" style="text-align: center;">
+            <strong>Improvement</strong>
+          </div>
+        </div>
+
+        <div class="issue">
+
+          <div class="problem">
+            <p>Repetition of the chart labels</p>
+          </div>
+
+          <div class="solution">
+            <p>Remove the repeating labels from the chart and leave the descriptions below the chart</p>
+          </div>
+        </div>
+
+        <div class="issue">
+
+          <div class="problem">
+            <p>Incorrect plot for the data - some data is hard to read from a pie chart</p>
+          </div>
+
+          <div class="solution">
+            <p>Change the pie chart into bar plot for better visibility</p>
+          </div>
+        </div>
+
+        <div class="issue">
+
+          <div class="problem">
+            <p>Bad design - nonascetic background and messy pointers to data percentage</p>
+          </div>
+
+          <div class="solution">
+            <p>Center the white background circle and use simple straight lines to connect the percenatge with corresponding data segment</p>
+          </div>
+        </div>
+
+        <div class="issue">
+
+          <div class="problem">
+            <p>Clashing color palette - badly chosen colors that are too simillar and hardly distingishable</p>
+          </div>
+
+          <div class="solution">
+            <p>Use pre-generated palettes dedicated to creating colorful graphs</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  <!-- Graph 2 -->
+    <section>
+      <p>
+        <h3>2. Graph Two</h3>
+      </p>
+      
+      <img src="Images/bad_graph_2.png" alt="Example graph" class="quiz-image">
+    
+      <p><strong>Graph 2 Caption:</strong> publications by year</p>
+      <p style="text-align: right;">
+        (<a href="https://www.researchgate.net/publication/383023894_Counterfactual_Reasoning_and_Cognitive_Sciences_A_Bibliometric_Analysis">Graph Source</a>)<br>
+      </p>
+
+      <button class="reveal-btn" onclick="toggleAnswer(this)">
+        Reveal Answer
+      </button>
+
+      <div class="quiz-answer hidden">
+        <div class="issue">
+
+          <div class="problem" style="text-align: center;">
+            <strong>Problem</strong>
+          </div>
+
+          <div class="solution" style="text-align: center;">
+            <strong>Improvement</strong>
+          </div>
+        </div>
+
+        <div class="issue">
+
+          <div class="problem">
+            <p>Missing axis labels</p>
+          </div>
+
+          <div class="solution">
+            <p>Add clear axis labels including units</p>
+          </div>
+        </div>
+
+        <div class="issue">
+
+          <div class="problem">
+            <p>Unnatural way of representation - years on the graph are in a reveresed chronological order</p>
+          </div>
+
+          <div class="solution">
+            <p>Change the year's chronology from oldest to newest one</p>
+          </div>
+        </div>
+
+        <div class="issue">
+
+          <div class="problem">
+            <p>Bad design - year dates are hard to read in vertical position</p>
+          </div>
+
+          <div class="solution">
+            <p>Tilt the year dates so that they are more readable</p>
+          </div>
+        </div>
+
+        <div class="issue">
+
+          <div class="problem">
+            <p>Unclear purpose of the graph - caption does not explain what the graph is supposed to represent</p>
+          </div>
+
+          <div class="solution">
+            <p>Add a detailed caption that explains the data presented and/or add a graph title</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
