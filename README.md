@@ -2,7 +2,7 @@
 
 As my final assignment for the course **Basic Toolkit for Bioinformatics Research** I created the website *"Bioinformatics Toolkit"*, which aims to organize and summarize the most important tools, concepts, and reflections from the course in one accessible and nicely-presented place.
 
-Rather than being a complete manual, this website functions as a detailed round-up that incldes various references and learning resources, by combining technical guides with diverse insights into how bioinformatics research is conducted.
+Rather than being a complete manual, this website functions as a detailed round-up that includes various references and learning resources, by combining technical guides with diverse insights into how bioinformatics research is conducted.
 
 ---
 
@@ -20,7 +20,7 @@ The website consists of multiple interconnected pages, each focusing on a differ
   An introduction to version control and reproducible workflows, including practical Git commands and concepts.
 
 - **Visualization**  
-  Guidelines for creating easily-readible and honest scientific figures, along with an interactive “Graph Critique” Game to practice data visualization principles.
+  Guidelines for creating easily-readable and honest scientific figures, along with an interactive “Graph Critique” Game to practice data visualization principles.
 
 - **Podcasts**  
   Selected recommendations from the *Night Science* podcast series, that highlight the creative and reflective side of scientific research.
