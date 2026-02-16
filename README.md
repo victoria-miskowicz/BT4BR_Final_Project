@@ -1,6 +1,6 @@
 # Basic Toolkit for Bioinformatics Research — Course Overview Website
 
-As my final assignment for the course **Basic Toolkit for Bioinformatics Research** I created the website *"Bioinformatics Toolkit"*, which aims to organize and summarize the most important tools, concepts, and reflections from the course in one accessible and nicely-presented place.\
+As my final assignment for the course **Basic Toolkit for Bioinformatics Research** I created the website *"Bioinformatics Toolkit"*, which aims to organize and summarize the most important tools, concepts, and reflections from the course in one accessible and nicely-presented place.
 
 Rather than being a complete manual, this website functions as a detailed round-up that incldes various references and learning resource,by combining technical guides with diverse insights into how bioinformatics research is conducted.
 
