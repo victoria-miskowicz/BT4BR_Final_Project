@@ -2,7 +2,7 @@
 
 As my final assignment for the course **Basic Toolkit for Bioinformatics Research** I created the website *"Bioinformatics Toolkit"*, which aims to organize and summarize the most important tools, concepts, and reflections from the course in one accessible and nicely-presented place.
 
-Rather than being a complete manual, this website functions as a detailed round-up that incldes various references and learning resource,by combining technical guides with diverse insights into how bioinformatics research is conducted.
+Rather than being a complete manual, this website functions as a detailed round-up that incldes various references and learning resources, by combining technical guides with diverse insights into how bioinformatics research is conducted.
 
 ---
 
@@ -20,22 +20,22 @@ The website consists of multiple interconnected pages, each focusing on a differ
   An introduction to version control and reproducible workflows, including practical Git commands and concepts.
 
 - **Visualization**  
-  Guidelines for creating clear and honest scientific figures, along with an interactive “Graph Critique” Game to practice data visualization principles.
+  Guidelines for creating easily-readible and honest scientific figures, along with an interactive “Graph Critique” Game to practice data visualization principles.
 
 - **Podcasts**  
-  Selected recommendations from the *Night Science* podcast, that highlight the creative and reflective side of scientific research.
+  Selected recommendations from the *Night Science* podcast series, that highlight the creative and reflective side of scientific research.
 
-## Tools and systems Used
+## Tools and systems Used in the Project
 
-- HTML5  
-- CSS3  
-- JavaScript  
-- Git & GitHub  
-- Linux-based development environment  
+- HTML5
+- CSS3
+- JavaScript
+- Git & GitHub
+- Linux-based development environment (Linux Mint)
 
 ## Purpose
 
-This project's goal is to reflect both the technical toolkit and the mindset emphasized throughout the course: critical thinking, reproducibility, clear communication, and creativity in science. It also serves as a personal reference and reminder for future bioinformatics work.
+This project's goal is to conclude both the technical toolkit and the mindset emphasized throughout the course: critical thinking, reproducibility, clear communication, and creativity in science. It also serves as a personal reference and reminder for future bioinformatics work.
 
 ---
 
@@ -47,11 +47,11 @@ All content was based on the materials available on the shared presentations, as
 ---
 ## AI Code of Conduct
 
-I used Chat-GPT for developing the JavaScript code for the mechanism of showing/hiding answers for the “Graph Critique” Game.
+I used Chat-GPT for developing the JavaScript code for the mechanism of revealing/hiding answers for the “Graph Critique” Game.
 
 ---
 
 ## Final Notes
 
-This website was created by a single author as a final project for the course **The Basic Toolkit for Bioinformatics Research**.\
-Developed by Victoria Miśkowicz * 2026
+This website was created by as the final project for the course **The Basic Toolkit for Bioinformatics Research**.\
+Developed and designed by Victoria Miśkowicz - 2026
